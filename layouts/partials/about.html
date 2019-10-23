@@ -3,7 +3,8 @@
     <section id="about" class="section about">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-sm-12 wow fadeInLeft">
+                <!-- <div class="col-md-12 col-sm-12 wow fadeInLeft"> -->
+                <div class="heading wow fadeInLeft">
                     <div class="content">
                         <div class="sub-heading">
                         {{ with .Site.Params.about.heading }}
@@ -15,12 +16,12 @@
                         {{ end }}
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="about-slider">
-                        {{ range .Site.Params.about.sliderItem }}
-                            <img src="{{ .image }}" alt="slider-image">
-                        {{ end }}
+                <div class="col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.3s">
+                    {{ range .Site.Params.about.sliderItem }}
+                    <div class="about-slider col-md-3 col-sm-3 text-center">
+                            <a href="{{ .link }}" target="_blank"><img src="{{ .image }}" height="100px" alt="slider-image"></a>
                     </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
