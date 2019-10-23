@@ -30,6 +30,13 @@
                         </a>
                     </li>
                 {{ end }}
+                {{ if .Site.Params.feature.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#feature">
+                            {{ with .Site.Params.navigation.feature}} {{ . }} {{ end }}
+                        </a>
+                    </li>
+                {{ end }}
                 {{ if .Site.Params.about.enable }}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ .Site.BaseURL }}#about">
