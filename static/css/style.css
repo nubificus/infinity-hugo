@@ -413,6 +413,37 @@ float:right;
 }
 
 /*--
+    serverless start
+--*/
+.serverless {
+  text-align: center;
+}
+
+.serverless .block {
+  margin-bottom: 50px;
+}
+
+.serverless .block i {
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #1bafb4;
+}
+
+.serverless .block h3 {
+  color: #333333;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.serverless .block p {
+  color: #666;
+}
+
+/*--
     service start
 --*/
 .service {
@@ -443,7 +474,24 @@ float:right;
   color: #666;
 }
 
-/*--
+//*--
+    About start
+--*/
+.feature .content h3 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #7e7e7e;
+  margin-bottom: 20px;
+  font-family: 'Droid Serif', serif;
+}
+
+.feature .feature-slider img {
+  width: 100%;
+  height: auto;
+}
+
+*--
     About start
 --*/
 .about .content h3 {
@@ -570,12 +618,13 @@ footer {
   text-align: center;
   background: #272727;
   padding: 27px 0px;
+  color: #fff;
 }
 
 footer p {
   font-weight: 300;
   font-size: 12px;
-  color: #dfdfdf;
+  color: #ffffff;
   letter-spacing: 3px;
 }
 

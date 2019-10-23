@@ -16,10 +16,10 @@
                         {{ with .Site.Params.navigation.home }} {{ . }} {{ end }}
                     </a>
                 </li>
-                {{ if .Site.Params.about.enable }}
+                {{ if .Site.Params.serverless.enable }}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ .Site.BaseURL }}#about">
-                            {{ with .Site.Params.navigation.about }} {{ . }} {{ end }}
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#serverless">
+                            {{ with .Site.Params.navigation.serverless}} {{ . }} {{ end }}
                         </a>
                     </li>
                 {{ end }}
@@ -27,6 +27,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ .Site.BaseURL }}#service">
                             {{ with .Site.Params.navigation.service }} {{ . }} {{ end }}
+                        </a>
+                    </li>
+                {{ end }}
+                {{ if .Site.Params.about.enable }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .Site.BaseURL }}#about">
+                            {{ with .Site.Params.navigation.about }} {{ . }} {{ end }}
                         </a>
                     </li>
                 {{ end }}

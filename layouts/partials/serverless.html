@@ -1,18 +1,19 @@
-{{ if .Site.Params.service.enable }}
+
+{{ if .Site.Params.serverless.enable }}
     {{"<!-- Service Section -->" | safeHTML}}
-    <section id="service" class="service section">
+    <section id="serverless" class="serverless section bg-gray">
         <div class="container">
             <div class="row">
                 <div class="heading wow fadeInUp">
-                    {{ with .Site.Params.service.title }}
+                    {{ with .Site.Params.serverless.title }}
                         <h2>{{ . }}</h2>
                     {{ end }}
-                    {{ with .Site.Params.service.subtitle }}
+                    {{ with .Site.Params.serverless.subtitle }}
                         <p>{{ . }}</p>
                     {{ end }}
                 </div>
-                {{ range .Site.Params.service.serviceItem }}
-                    <div class="col-sm-8 col-md-4 wow fadeInLeft" data-wow-delay="{{ .delay }}">
+                {{ range .Site.Params.serverless.serverlessItem }}
+                    <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay="{{ .delay }}">
                         <div class="block">
                             <i class="{{ .icon }}"></i>
                             <h3>{{ .title }}</h3>
