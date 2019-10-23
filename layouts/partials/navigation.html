@@ -2,7 +2,7 @@
     <nav class="navbar navbar-fixed-top  navigation " id="top-nav">
         <a class="navbar-brand float-none float-lg-left" href="{{ .Site.BaseURL }}">
             {{ with .Site.Params.navigation.logo }}
-            <img src="{{ . }}" width=70px alt="logo">
+            <img src="{{ . }}" height=50px alt="logo">
 	    {{ end }}
 	    
         </a>
@@ -10,7 +10,7 @@
             <i class="tf-ion-android-menu"></i>
         </button>
         <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-            <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
+            <ul class="nav navbar-nav menu float-lg-right" id="top-nav" style="float:right">
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ .Site.BaseURL }}#home">
                         {{ with .Site.Params.navigation.home }} {{ . }} {{ end }}
