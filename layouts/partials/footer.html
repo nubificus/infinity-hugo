@@ -98,6 +98,15 @@
 <script src="{{"js/jquery.nav.js" | absURL}}"></script>
 <script src="{{"js/wow.min.js" | absURL}}"></script>
 <script src="{{"js/main.js" | absURL}}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1610214-8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', {{ .Site.GoogleAnalytics }});
+</script>
+
 
 </body>
 
