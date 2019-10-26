@@ -22,7 +22,7 @@
                             <h2>{{ . }}</h2>
                             {{ end }}
                             {{ with .Site.Params.contact.innerdesc}}
-                                <p style="text-align:left">{{ . }}</p>
+                                <p style="text-align:left">{{ . | safeHTML }}</p>
                             {{ end }}
                         </div>
                     </div>
