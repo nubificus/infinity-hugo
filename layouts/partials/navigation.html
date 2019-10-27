@@ -1,5 +1,5 @@
 <div class="container">
-    <nav class="navbar navbar-fixed-top  navigation " id="top-nav">
+    <nav class="navbar navbar-fixed-top  navigation " id="top-nav"  style="cursor:pointer;">
         <a class="navbar-brand float-none float-lg-left" href="{{ .Site.BaseURL }}">
             {{ with .Site.Params.navigation.logo }}
             <img src="{{ . }}" height=50px alt="logo">
@@ -10,15 +10,15 @@
             <i class="tf-ion-android-menu"></i>
         </button>
         <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-            <ul class="nav navbar-nav menu float-lg-right" id="top-nav" style="float:right">
+            <ul class="nav navbar-nav menu float-lg-right" id="top-nav" style="cursor:pointer;float:right">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ .Site.BaseURL }}#home">
+                    <a class="nav-link " href="{{ .Site.BaseURL }}#home">
                         {{ with .Site.Params.navigation.home }} {{ . }} {{ end }}
                     </a>
                 </li>
                 {{ if .Site.Params.serverless.enable }}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ .Site.BaseURL }}#serverless">
+                        <a class="nav-link" data-toggle="collapse" href="{{ .Site.BaseURL }}#serverless">
                             {{ with .Site.Params.navigation.serverless}} {{ . }} {{ end }}
                         </a>
                     </li>
